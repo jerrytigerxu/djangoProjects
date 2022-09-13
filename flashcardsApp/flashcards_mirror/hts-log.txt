@@ -1,0 +1,11 @@
+HTTrack3.49-2 launched on Tue, 13 Sep 2022 16:28:09 at http://127.0.0.1:8000/
+(httrack http://127.0.0.1:8000/ -O flashcards )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 12 seconds : 12 links scanned, 11 files written (23872 bytes overall) [31044 bytes received at 2587 bytes/sec]
+(No errors, 0 warnings, 0 messages)

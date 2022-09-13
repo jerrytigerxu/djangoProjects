@@ -1,0 +1,132 @@
+<!-- cards/templates/cards/card_form.html -->
+<!-- The CreateView looks for a tempate with _form.html -->
+
+
+<!-- cards/templates/cards/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from 127.0.0.1:8000/edit/21 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 20:28:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Flashcards</title>
+		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	</head>
+
+	<style>
+    /* Custom CSS */
+
+    :root {
+        --accent: #6e48ad;
+        --accent-bg: white;
+        --bg: #fff;
+        --text: #212121;
+        --text-light: #585858;
+        --border: #d8dae1;
+        --code: #d81b60;
+        --preformatted: #444;
+    }
+
+    article {
+        background-color: var(--marked);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 1em;
+        margin: 1em 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h2, h4 {
+        margin-top: 0;
+    }
+
+    hr {
+        background: var(--accent);
+        border-color: var(--accent);
+    }
+
+    button,
+    a[role="button"] {
+        color: white;
+        text-decoration: none;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+</style>
+
+	<body>
+		<header>
+			<h1>Flashcards App</h1>
+			<!-- cards/templates/cards/navigation.html -->
+
+ 
+
+<nav>
+	<a href="../index.html">🗂 All Cards</a>
+	<!-- cards/templates/box_links.html -->
+
+ 
+
+ 
+    <a href="../box/1.html">
+        🗃 1st Box <mark>0</mark>
+    </a>
+ 
+    <a href="../box/2.html">
+        🗃 2nd Box <mark>1</mark>
+    </a>
+ 
+    <a href="../box/3.html">
+        🗃 3rd Box <mark>0</mark>
+    </a>
+ 
+    <a href="../box/4.html">
+        🗃 4th Box <mark>0</mark>
+    </a>
+ 
+    <a href="../box/5.html">
+        🗃 5th Box <mark>1</mark>
+    </a>
+  
+</nav>
+
+		</header>
+		<main>
+		
+	
+		<h2> ✏️  Edit Card</h2>
+	
+	<form method="post">
+		<input type="hidden" name="csrfmiddlewaretoken" value="HyyKcOWPCsiWpVSyPGBWeX5fE0QsflLM0HMSc7NRX1oxfzvihwE0BsoW6RMwmMHj">
+		<p><label for="id_question">Question:</label> <input type="text" name="question" value="Supercalifragilisticexpialadocious" maxlength="100" required id="id_question"></p>
+<p><label for="id_answer">Answer:</label> <input type="text" name="answer" value="Wow!" maxlength="100" required id="id_answer"></p>
+<p><label for="id_box">Box:</label> <select name="box" id="id_box">
+  <option value="1">1</option>
+
+  <option value="2">2</option>
+
+  <option value="3">3</option>
+
+  <option value="4">4</option>
+
+  <option value="5" selected>5</option>
+
+</select></p>
+		<input type="submit" value="Save Card">
+	</form>
+
+	<a href="../index.html">
+		Cancel
+	</a>
+
+		</main>
+	</body>
+
+<!-- Mirrored from 127.0.0.1:8000/edit/21 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 20:28:21 GMT -->
+</html>
