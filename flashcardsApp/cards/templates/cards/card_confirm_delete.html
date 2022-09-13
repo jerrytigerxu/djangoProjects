@@ -1,0 +1,16 @@
+<!-- The DeleteView looks for a template with suffix of _confirm_delete -->
+<!-- cards/templates/cards/card_confirm_delete.html -->
+
+{% extends "cards/base.html" %}
+
+{% block content %}
+	<form method="post">
+		{% csrf_token %}
+		<p>Are you sure you want to delete this card?</p>
+		<input type="submit" value="Confirm">
+	</form>
+
+	<a href="{% url 'card-list' %}">
+		Cancel
+	</a>
+{% endblock %}
